@@ -9,7 +9,7 @@ node('master'){
             sh 'python test_functions.py'
         }
         
-        stage("Testing"){
+        stage("Development"){
             if(env.BRANCH_NAME == 'master'){
                 printMessage('Desplegando master Branch')
             }else{
