@@ -1,4 +1,5 @@
 from functions import sum_number
+from functions import get_full_name
 import unittest
 
 class TestSum(unittest.TestCase):
@@ -12,7 +13,7 @@ class TestSum(unittest.TestCase):
         self.assertEqual(100, sum_number(50, 50))
     
     def test_full_name(self):
-        self.assertEqual("gonzalez, santiago", get_full_name("santiago","gonzalez"))
+        self.assertEqual("gonzalez , santiago", get_full_name("santiago","gonzalez"))
 
 if __name__ == '__main__':
     unittest.main()
