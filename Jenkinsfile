@@ -6,6 +6,7 @@ node('master'){
         printMessage('Ejecutando Pipeline')
         
         stage('Testing'){
+            sh 'apk add python'
             sh 'python test_functions.py'
         }
         
